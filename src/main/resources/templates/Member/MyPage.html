@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Hub</title>
+    <!-- 수정된 절대 경로로 외부 CSS 파일을 추가 -->
+    <link href="/Travel_Main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="min-h-screen flex flex-col">
+    <div th:replace="~{/../header :: header}"></div>
+    <main class="flex-1">
+        <h1>마이 페이지</h1>
+        <!-- 이곳에 추가적인 내용을 넣으세요 -->
+    </main>
+    <div th:replace="~{realfooter :: footer}"></div>
+</div>
+</body>
+</html>

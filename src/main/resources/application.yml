@@ -1,0 +1,50 @@
+  spring:
+    datasource: #항상 여기 주석 처리 해야함
+<<<<<<< HEAD
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://travel-project.cp0mag4s6790.us-east-2.rds.amazonaws.com:3306/travel?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      username: root
+      password: 123456789
+=======
+>>>>>>> 73ee224355d63f9b5a24cb6b333c14d470353c88
+
+    thymeleaf:
+      prefix: classpath:/templates/
+      cache: false
+      suffix: .html
+
+    security:
+      user:
+        name: test
+        password: $2y$12$cbrPadvXKHw1.5/Dyfs5BOCA6nObQEXSVyzwel0zgFsqidr4Hdwte
+
+    devtools:
+      livereload:
+        enabled: true
+
+    jpa:
+      hibernate:
+        ddl-auto: create
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+      database-platform: org.hibernate.dialect.MySQLDialect
+
+  server:
+    port: 8083
+    mvc:
+      view:
+        suffix: .html
+
+    application:
+      name: travel
+
+  logging:
+    level:
+      org:
+        hibernate:
+          type:
+            descriptor.sql: trace
+
+

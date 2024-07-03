@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+h1 {
+  color: #0a58ca;
+  font-family: Arial, sans-serif; /* 원하는 폰트를 여기에 추가 */
+  font-size: 50px;
+}

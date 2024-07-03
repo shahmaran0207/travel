@@ -1,0 +1,1156 @@
+CREATE TABLE gangwon_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+
+CREATE TABLE gangwon_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangwon_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gunggi_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+
+CREATE TABLE gungnam_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungnam_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gungbuk_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE gangju_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungbuk_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daegu_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE daejeon_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+
+CREATE TABLE busan_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE busan_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE seoul_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE ulsan_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE incheon_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonnam_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE chungnam_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeju_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_hotel_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_amuse_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_condo_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_camping_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_elsesleep_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_dutyfree_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_leisureshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_hugeshop_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_golf_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_ski_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_culture_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+CREATE TABLE jeonbuk_food_24 (
+    idx INT AUTO_INCREMENT PRIMARY KEY,
+    predict_month VARCHAR(200),
+    predict_value DECIMAL(65,2)
+);
+
+
