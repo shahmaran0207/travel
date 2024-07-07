@@ -1,11 +1,7 @@
   spring:
     datasource: #항상 여기 주석 처리 해야함
 <<<<<<< HEAD
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://travel-project.cp0mag4s6790.us-east-2.rds.amazonaws.com:3306/travel?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-      username: root
-      password: 123456789
-=======
+      
 >>>>>>> 73ee224355d63f9b5a24cb6b333c14d470353c88
 
     thymeleaf:
