@@ -1,21 +1,8 @@
   spring:
-    datasource: #항상 여기 주석 처리 해야함
-
+    datasource: #항상 여기 주석 처리 해야 함
 
     thymeleaf:
       prefix: classpath:/templates/
-      cache: false
-      suffix: .html
-
-    security:
-      user:
-        name: test
-        password: $2y$12$cbrPadvXKHw1.5/Dyfs5BOCA6nObQEXSVyzwel0zgFsqidr4Hdwte
-
-    devtools:
-      livereload:
-        enabled: true
-
     jpa:
       hibernate:
         ddl-auto: create
@@ -37,8 +24,9 @@
   logging:
     level:
       org:
+        springframework:
+          security: DEBUG
         hibernate:
           type:
             descriptor.sql: trace
-
 

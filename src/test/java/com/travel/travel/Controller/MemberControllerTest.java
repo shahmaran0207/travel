@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.formLogin;
@@ -29,6 +30,8 @@ class MemberControllerTest {
 
     @Autowired
     PasswordEncoder pe;
+    @Autowired
+    private MockMvc mockMvc;
 
     public Member createMember(String email, String password) {
         MemberFormDTO form = new MemberFormDTO();
@@ -51,5 +54,17 @@ class MemberControllerTest {
                         .loginProcessingUrl("/Member/Login")
                         .user(email).password(password))
                 .andExpect(authenticated());
+    }
+    
+    @Test
+    @DisplayName("로그인 실패 테스트")
+    public void LoginfailTest() throws Exception{
+        String email="test@gmail.com";
+        String password="1234";
+
+        mockMvc.perform(formLogin().userParameter("email")
+                .loginProcessingUrl("/Member/Login")
+                .user(email).password("12234"))
+                .andExpect(SecurityMockMvcResultMatchers.unauthenticated());
     }
 }
