@@ -49,9 +49,9 @@ public class MemberController {
         return "/Member/Login";
     }
 
-    @GetMapping(value="/Login/error")
-    public String loginError(Model model){
+    @GetMapping("/Login/error")
+    public String loginError(Model model) {
         model.addAttribute("loginErrorMsg", "아이디 혹은 비밀번호를 확인해주세요");
-        return "/Member/Login";
+        return "Member/Login";
     }
 }

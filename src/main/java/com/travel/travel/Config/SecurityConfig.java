@@ -26,22 +26,22 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf // CSRF 보호 활성화
-                        .ignoringRequestMatchers("/h2-console/**") // 필요한 경우 특정 경로 무시
+                .csrf(csrf -> csrf
+                        .ignoringRequestMatchers("/h2-console/**")
                 )
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/Member/Login", "/Member/new", "/h2-console/**").permitAll() // 접근 허용 경로 설정
-                        .anyRequest().authenticated() // 나머지 경로는 인증 필요
+                        .requestMatchers("/Member/Login", "/Member/new", "/h2-console/**").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
-                        .loginPage("/Member/Login") // 사용자 정의 로그인 페이지
-                        .defaultSuccessUrl("/") // 로그인 성공 시 리다이렉트 경로
-                        .usernameParameter("email") // 사용자 이름 파라미터
-                        .failureUrl("/Member/Login/error") // 로그인 실패 시 리다이렉트 경로
+                        .loginPage("/Member/Login")
+                        .defaultSuccessUrl("/")
+                        .usernameParameter("email")
+                        .failureUrl("/Member/Login/error")
                 )
                 .logout(logout -> logout
-                        .logoutRequestMatcher(new AntPathRequestMatcher("/Member/Logout")) // 로그아웃 경로
-                        .logoutSuccessUrl("/") // 로그아웃 성공 시 리다이렉트 경로
+                        .logoutRequestMatcher(new AntPathRequestMatcher("/Member/Logout"))
+                        .logoutSuccessUrl("/")
                 );
 
         return http.build();
