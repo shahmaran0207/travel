@@ -1,26 +1,25 @@
-  spring:
-    datasource: 
+spring:
+  datasource: #항상 여기 주석 처리 해야 함
 
-
-    thymeleaf:
-      prefix: classpath:/templates/
-    jpa:
+  thymeleaf:
+    prefix: classpath:/templates/
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
       hibernate:
-        ddl-auto: create
-      show-sql: true
-      properties:
-        hibernate:
-          format_sql: true
-      database-platform: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
 
-  server:
-    port: 8083
-    mvc:
-      view:
-        suffix: .html
+server:
+  port: 8083
+  mvc:
+    view:
+      suffix: .html
 
-    application:
-      name: travel
+  application:
+    name: travel
 
   logging:
     level:
@@ -30,4 +29,3 @@
         hibernate:
           type:
             descriptor.sql: trace
-

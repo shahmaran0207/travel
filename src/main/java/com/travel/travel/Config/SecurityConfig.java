@@ -1,6 +1,7 @@
 package com.travel.travel.Config;
 
 import com.travel.travel.Service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -17,50 +18,14 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    private final MemberService memberService;
+    @Autowired
+    private MemberService memberService;
 
-    public SecurityConfig(MemberService memberService) {
-        this.memberService = memberService;
-    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .csrf(csrf -> csrf
-                        .ignoringRequestMatchers("/h2-console/**")
-                )
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/Member/Login", "/Member/new", "/h2-console/**").permitAll()
-                        .anyRequest().authenticated()
-                )
-                .formLogin(form -> form
-                        .loginPage("/Member/Login")
-                        .defaultSuccessUrl("/")
-                        .usernameParameter("email")
-                        .failureUrl("/Member/Login/error")
-                )
-                .logout(logout -> logout
-                        .logoutRequestMatcher(new AntPathRequestMatcher("/Member/Logout"))
-                        .logoutSuccessUrl("/")
-                );
 
         return http.build();
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-    @Bean
-    public UserDetailsService userDetailsService() {
-        return memberService;
-    }
-
-    @Bean
-    public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-        AuthenticationManagerBuilder authBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-        authBuilder.userDetailsService(memberService).passwordEncoder(passwordEncoder());
-        return authBuilder.build();
-    }
 }
