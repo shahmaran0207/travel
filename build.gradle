@@ -47,11 +47,7 @@ dependencies {
 	implementation "com.querydsl:querydsl-collections"
 	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
 	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
-// https://mvnrepository.com/artifact/org.thymeleaf.extras/thymeleaf-extras-springsecurity6
-	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
-
-
-
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE' // - springsecurity5로 하면 작동 안함
 }
 
 def generated = 'src/main/generated'

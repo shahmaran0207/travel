@@ -41,7 +41,7 @@ public class MemberController {
             return "Member/MemberForm";
         }
 
-        return "redirect:/";
+        return "redirect:/thymeleafEX/thymeleafEX07";
     }
 
     @GetMapping(value="/Login")

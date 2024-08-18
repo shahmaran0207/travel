@@ -33,7 +33,7 @@
             </ul>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li>
-                    <form class="form-inline my-2 my-lg-9" th:action="@{/}" method="get">
+                    <form class="form-inline my-2 my-lg-9" th:action="@{/thymeleafEX/thymeleafEX07}" method="get">
                         <div style="position: relative;">
                             <input name="searchQuery" class="form-control mr-sm-2"
                                    type="search" placeholder="Search" aria-label="Search"
@@ -49,7 +49,7 @@
                     </form>
                 </li>
                 <li>
-                    <a class="nav-link" href="/" style="position: relative; z-index: 1;">
+                    <a class="nav-link" href="/thymeleafEX/thymeleafEX07" style="position: relative; z-index: 1;">
                         <svg class="nav-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                              style="width: 1em; height: 1em;">
                             <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7
@@ -73,14 +73,12 @@
                         </svg>
                     </a>
                 </li>
-                <!-- 로그인 -->
                 <li class="nav-item" sec:authorize="isAnonymous()">
                     <a class="nav-link" href="/Member/Login">로그인</a>
                 </li>
                 <li class="nav-item" sec:authorize="isAnonymous()">
                     <a class="nav-link" href="/Member/new">회원가입</a>
                 </li>
-                <!-- 로그아웃 -->
                 <li class="nav-item" sec:authorize="isAuthenticated()">
                     <a class="nav-link" href="/Member/Logout">로그아웃</a>
                 </li>

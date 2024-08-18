@@ -22,25 +22,26 @@ public class SecurityConfig {
     private MemberService memberService;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
-        http
-                .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/Member/Login", "/Member/Login/error", "/Member/Logout", "/**").permitAll()
-                        .anyRequest().authenticated()
-                )
-                .formLogin(formLogin -> formLogin
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http.authorizeHttpRequests(authorizeHttpRequestsCustomizer -> authorizeHttpRequestsCustomizer
+                        .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
+                        .requestMatchers("/", "/Member/**", "/Item/**", "/images/**", "/thymeleafEX/thymeleafEX07").permitAll()
+                        .requestMatchers("/Admin/**").hasRole("ADMIN")
+                        .anyRequest()
+                        .authenticated()
+                ).formLogin(formLoginCustomizer -> formLoginCustomizer
                         .loginPage("/Member/Login")
-                        .defaultSuccessUrl("/")
+                        .defaultSuccessUrl("/thymeleafEX/thymeleafEX07")
                         .usernameParameter("email")
                         .failureUrl("/Member/Login/error")
-                )
-                .logout(logout -> logout
+                        .failureHandler(new CustomAuthenticationFailureHandler())
+                ).logout( logoutCustomizer -> logoutCustomizer
                         .logoutRequestMatcher(new AntPathRequestMatcher("/Member/Logout"))
-                        .logoutSuccessUrl("/")
-                );
+                        .logoutSuccessUrl("/thymeleafEX/thymeleafEX07")
 
-        return http.build();
+                )
+                .build()
+                ;
     }
 
     @Bean
