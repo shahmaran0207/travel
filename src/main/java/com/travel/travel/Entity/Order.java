@@ -4,6 +4,8 @@ import com.travel.travel.Constant.OrderStatus;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="Orders")
@@ -21,7 +23,10 @@ public class Order {
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus status;
+    private OrderStatus OrderStatus;
+
+    @OneToMany
+    private List<OrderItem> orderItems=new ArrayList<>();
 
     private LocalDateTime regTime;
 

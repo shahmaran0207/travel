@@ -6,6 +6,8 @@ import lombok.Setter;
 import org.apache.ibatis.annotations.Many;
 import org.hibernate.mapping.Join;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -24,4 +26,12 @@ public class OrderItem {
     @ManyToOne
     @JoinColumn(name="order_id")
     private Order order;
+
+    private int orderPrice;
+
+    private int count;
+
+    private LocalDateTime regTime;
+
+    private LocalDateTime updateTime;
 }
