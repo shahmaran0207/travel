@@ -14,7 +14,7 @@ spring:
     cache: false
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create    #validate: 테스트 코드 실행 시 테이블이 자동으로 생성되지 않음
     show-sql: true
     properties:
       hibernate:
