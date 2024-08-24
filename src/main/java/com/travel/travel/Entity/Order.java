@@ -29,7 +29,8 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus OrderStatus;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL) //부모 엔티티 영속성 상태 변화를 자식 엔티티에 전이
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL,   //부모 엔티티 영속성 상태 변화를 자식 엔티티에 전이
+            orphanRemoval = true)
     private List<OrderItem> orderItems=new ArrayList<>();
 
     private LocalDateTime regTime;

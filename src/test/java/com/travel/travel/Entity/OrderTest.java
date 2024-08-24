@@ -2,6 +2,7 @@ package com.travel.travel.Entity;
 
 import com.travel.travel.Constant.ItemSellStatus;
 import com.travel.travel.Repository.ItemRepository;
+import com.travel.travel.Repository.MemberRepository;
 import com.travel.travel.Repository.OrderRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -28,6 +29,8 @@ class OrderTest {
 
     @PersistenceContext
     EntityManager em;
+    @Autowired
+    private MemberRepository memberRepository;
 
     public Item createItem(){
         Item item = new Item();
@@ -40,6 +43,27 @@ class OrderTest {
 
         item.setUpdatetime(LocalDateTime.now());
         return item;
+    }
+
+    public Order createOrder(){
+        Order order=new Order();
+
+        for(int i=0; i<3; i++){
+            Item item=createItem();
+            itemRepository.save(item);
+            OrderItem orderItem=new OrderItem();
+            orderItem.setItem(item);
+            orderItem.setOrderPrice(1000);
+            orderItem.setOrder(order);
+            order.getOrderItems().add(orderItem);
+        }
+
+        Member member=new Member();
+        memberRepository.save(member);
+
+        order.setMember(member);
+        orderRepository.save(order);
+        return order;
     }
 
     @Test
@@ -65,5 +89,13 @@ class OrderTest {
         Order savedOrder = orderRepository.findById(order.getId())
                 .orElseThrow(EntityNotFoundException::new);
         assertEquals(3, savedOrder.getOrderItems().size());
+    }
+    
+    @Test
+    @DisplayName("고아객체 제거 테스트")
+    public void orphanRemovalTest(){
+        Order order=this.createOrder();
+        order.getOrderItems().remove(0);
+        em.flush(); // 영속성 변경 사항을 데이터베이스에 강제로 반영하는 역할
     }
 }
