@@ -20,7 +20,7 @@ public class Order {
     @Column(name="order_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="member_id")
     private Member member;
 
@@ -30,7 +30,7 @@ public class Order {
     private OrderStatus OrderStatus;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL,   //부모 엔티티 영속성 상태 변화를 자식 엔티티에 전이
-            orphanRemoval = true)
+            orphanRemoval = true, fetch = FetchType.LAZY)
     private List<OrderItem> orderItems=new ArrayList<>();
 
     private LocalDateTime regTime;
