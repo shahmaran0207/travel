@@ -5,9 +5,9 @@ import com.travel.travel.Entity.Item;
 import com.travel.travel.Entity.ItemImg;
 import com.travel.travel.Repository.ItemImgRepository;
 import com.travel.travel.Repository.ItemRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -35,6 +35,13 @@ public class ItemService {
             itemImgService.saveItemImg(itemImg, itemImgFileList.get(i));
         }
         return item.getId();
+    }
+
+    @Transactional(readOnly=true)
+    public ItemFormDTO getItemDTL(Long itemId){
+
+        List<ItemImg> itemImgList=
+
     }
 
 }
