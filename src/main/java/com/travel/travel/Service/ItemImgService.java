@@ -2,6 +2,7 @@ package com.travel.travel.Service;
 
 import com.travel.travel.Entity.ItemImg;
 import com.travel.travel.Repository.ItemImgRepository;
+import jakarta.persistence.EntityExistsException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,5 +35,22 @@ public class ItemImgService {
         itemImg.updateItemImg(orImgName, imgName, imgUrl);
         itemImgRepository.save(itemImg);
 
+    }
+
+
+    public void updateItemImg(Long itemImgId, MultipartFile itemImgFile) throws Exception{
+        if(!itemImgFile.isEmpty()){
+            ItemImg savedItemImg=itemImgRepository.findById(itemImgId)
+                    .orElseThrow(EntityExistsException::new);
+
+            if(!StringUtils.isEmpty(savedItemImg.getImgName())){
+                fileService.deleteFile(itemImgLocation+"/"+savedItemImg.getImgName());
+            }
+
+            String orImgName=itemImgFile.getOriginalFilename();
+            String imgName=fileService.uploadFile(itemImgLocation, orImgName, itemImgFile.getBytes());
+            String imgUrl="/images/item/"+imgName;
+            savedItemImg.updateItemImg(orImgName, imgName, imgUrl);
+        }
     }
 }
