@@ -2,6 +2,7 @@ package com.travel.travel.Service;
 
 import com.travel.travel.Entity.ItemImg;
 import com.travel.travel.Repository.ItemImgRepository;
+import com.travel.travel.Repository.ItemRepository;
 import jakarta.persistence.EntityExistsException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,7 @@ import org.thymeleaf.util.StringUtils;
 @RequiredArgsConstructor
 public class ItemImgService {
 
+    private final ItemRepository itemRepository;
     @Value("${itemImgLocation}")
     private String itemImgLocation;
 

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.util.List;
 
 @Controller
@@ -60,5 +59,24 @@ public class ItemController {
             return "Item/ItemForm";
         }
         return "Item/ItemForm";
+    }
+
+    @PostMapping(value = "/Admin/Item/{itemId}")
+    public String itemUpdate(@Valid ItemFormDTO itemFormDTO,
+                             BindingResult bindingResult, @RequestParam("itemImgFile") List<MultipartFile> itemImgFileList, Model model){
+        if(bindingResult.hasErrors()) return "Item/ItemForm";
+
+        if(itemImgFileList.get(0).isEmpty() && itemFormDTO.getId()==null){
+            model.addAttribute("errorMessage", "첫 번째 상품 이미지는 필수 입력값입니다.");
+            return "Item/ItemForm";
+        }
+
+        try{
+            itemService.updateItem(itemFormDTO, itemImgFileList);
+        } catch (Exception e){
+            model.addAttribute("errorMessage", "상품 수정중 에러가 발생했습니다.");
+            return "Item/ItemForm";
+        }
+        return "redirect:/thymeleafEX/thymeleafEX07";
     }
 }

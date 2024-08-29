@@ -1,12 +1,11 @@
 package com.travel.travel.Entity;
 
 import com.travel.travel.Constant.ItemSellStatus;
+import com.travel.travel.DTO.ItemFormDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -38,6 +37,16 @@ public class Item {
     private ItemSellStatus itemSellStatus;
 
     private LocalDateTime regTime;
+
     private LocalDateTime updatetime;
+
     private String Itempic;
+
+    public void updateItem(ItemFormDTO itemFormDTO){
+        this.itemNm=itemFormDTO.getItemNm();
+        this.price=itemFormDTO.getPrice();
+        this.stockNumber=itemFormDTO.getStockNumber();
+        this.itemDetail=itemFormDTO.getItemDetail();
+        this.itemSellStatus=itemFormDTO.getItemSellStatus();
+    }
 }
